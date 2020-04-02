@@ -27,8 +27,7 @@ const updateUserInterface = (data) => {
 
     const iconSource = `img/icons/${weather.WeatherIcon}.svg`;
     icon.setAttribute("src", iconSource);
-
-    // true => day, false => night.
+    
     const timeSource = weather.IsDayTime ? "img/day.svg" : "img/night.svg";
     time.setAttribute("src", timeSource);
 
